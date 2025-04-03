@@ -1,16 +1,16 @@
 'use client'
 
-import { useRef } from 'react'
-import Link from 'next/link'
-import { usePathname } from 'next/navigation'
-import clsx from 'clsx'
 import { AnimatePresence, motion, useIsPresent } from 'framer-motion'
 
 import { Button } from '@/components/Button'
-import { useIsInsideMobileNavigation } from '@/components/MobileNavigation'
-import { useSectionStore } from '@/components/SectionProvider'
+import Link from 'next/link'
 import { Tag } from '@/components/Tag'
+import clsx from 'clsx'
 import { remToPx } from '@/lib/remToPx'
+import { useIsInsideMobileNavigation } from '@/components/MobileNavigation'
+import { usePathname } from 'next/navigation'
+import { useRef } from 'react'
+import { useSectionStore } from '@/components/SectionProvider'
 
 function useInitialValue(value, condition = true) {
   let initialValue = useRef(value).current
@@ -197,23 +197,23 @@ export const navigation = [
     links: [
       { title: 'Introduction', href: '/' },
       { title: 'Quickstart', href: '/quickstart' },
-      { title: 'SDKs', href: '/sdks' },
-      { title: 'Authentication', href: '/authentication' },
-      { title: 'Pagination', href: '/pagination' },
-      { title: 'Errors', href: '/errors' },
-      { title: 'Webhooks', href: '/webhooks' },
+      { title: 'Components', href: '/sdks' },
+      { title: 'Resources', href: '/authentication' },
+      { title: 'Applications', href: '/pagination' },
+      { title: 'Controllers', href: '/errors' },
+      // { title: 'Webhooks', href: '/webhooks' },
     ],
   },
-  {
-    title: 'Resources',
-    links: [
-      { title: 'Contacts', href: '/contacts' },
-      { title: 'Conversations', href: '/conversations' },
-      { title: 'Messages', href: '/messages' },
-      { title: 'Groups', href: '/groups' },
-      { title: 'Attachments', href: '/attachments' },
-    ],
-  },
+  // {
+  //   title: 'Resources',
+  //   links: [
+  //     { title: 'Contacts', href: '/contacts' },
+  //     { title: 'Conversations', href: '/conversations' },
+  //     { title: 'Messages', href: '/messages' },
+  //     { title: 'Groups', href: '/groups' },
+  //     { title: 'Attachments', href: '/attachments' },
+  //   ],
+  // },
 ]
 
 export function Navigation(props) {

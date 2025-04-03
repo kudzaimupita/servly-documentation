@@ -1,8 +1,8 @@
 export function Logo(props) {
   return (
     <img
-      style={{ height: '50px' }}
-      src="https://servly.app/assets/img/logo/SERVLYLOGO.png"
+      style={{ height: '30px' }}
+      src="https://studio.servly.app/servly-logo-blue.svg"
     ></img>
   )
 }
